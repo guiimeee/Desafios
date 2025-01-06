@@ -1,0 +1,356 @@
+* {
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+
+  --ff-title-lg: "Asap", serif; 
+  --ff-title-md: "Asap", serif; 
+  --ff-title-lg: "Asap", serif;
+  
+  --ff-subtitle: "Inconsolata", serif;
+  --ff-tag-md: "Inconsolata", serif;
+  --ff-tag-sm: "Inconsolata", serif;
+
+  --ff-text-md: "Maven Pro", serif;
+  --ff-text-sm: "Maven Pro", serif;
+
+  --bg-red: #E3646E;
+  --bg-purple: #BB72E9;
+  --bg-blue: #3996DB;
+  --bg-green: #82BC4F;
+  --bg-yellow: #EABD5F;
+
+  --bg-gray-100: #0D0E11;
+  --bg-gray-200: #16181D;
+  --bg-gray-300: #292C34;
+  --bg-gray-400: #878EA1;
+  --bg-gray-500: #C0C4CE;
+  --bg-gray-600: #E2E4E9;
+}
+
+body {
+  min-height: 100vh;
+  font-size: var(--fs-body);
+
+  background: #000;
+}
+
+.page {
+  min-height: 100vh;
+  padding: 8rem;
+
+  border-radius: 4rem;
+  background: #29292E;
+
+  color: antiquewhite;
+}
+
+.intro {
+  width: 100%;
+  height: 68.2rem;
+  background-image: url(image/Background_Intro.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  width: 104.0rem;
+  display: grid;
+  justify-items: center;
+  gap: 8rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6rem;
+}
+
+.avatar {
+  display: flex;
+  border: 2px solid #E3646E;
+  border-radius: 99.9rem;
+  padding: 0.436rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+}
+
+.text .title p {
+  font-family: var(--ff-subtitle);
+  font-size: 2.0rem;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--bg-gray-500);
+}
+
+.text .title p span {
+  color: var(--bg-red);
+}
+
+.text .title h1 {
+  color: var(--bg-gray-600);
+  font-family: var(--ff-title-lg);
+  font-size: 5.6rem;
+  line-height: 120%;
+  font-weight: bold;
+}
+
+.text p {
+  font-family: var(--ff-text-sm);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--bg-gray-400);
+}
+
+.tags {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.tags a {
+  border-radius: 99.9rem;
+
+  transition: all 300ms;
+}
+
+.tags a button{
+  font-family: var(--ff-tag-md);
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 120%;
+  color: var(--bg-gray-200);
+
+  padding: 0.4rem 1.2rem;
+  border: 1px solid #000000;
+  border-radius: 99.9rem;
+}
+
+.github {
+  background: var(--bg-green);
+}
+
+.php {
+  background: var(--bg-purple);
+}
+
+.css {
+  background: var(--bg-blue);
+}
+
+.html {
+  background: var(--bg-red);
+}
+
+.javascript {
+  background: var(--bg-yellow);
+}
+
+.tags a:hover {
+  transform: scale(1.1);
+  border: none;
+}
+
+.projects {
+  background-color: var(--bg-gray-200);
+  width: 100%;
+  padding: 7.2rem 12rem 14.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects header {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 0.8rem;
+
+  width: 104.0rem; 
+}
+
+.projects header h2 {
+  font-family: var(--ff-title-md);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 120%;
+  color: var(--bg-gray-600);
+}
+
+.projects header p {
+  font-family: var(--ff-subtitle);
+  font-size: 2.0rem;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--bg-red);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+
+  width: 104.0rem;
+  margin-top: 5.6rem;
+}
+
+.projectcard-link {
+  display: block;
+  text-decoration: none; 
+  border-radius: 1.2rem;
+  width: 50.8rem;
+  background: var(--bg-gray-300);
+  padding: 1.2rem;
+
+  transition: all 300ms;
+}
+.projectcard {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.projectcard img {
+  width: 22.4rem;
+  height: 15.6rem;
+
+  border-radius: 0.8rem;
+}
+
+.grid .text {
+  display: grid;
+  padding: 0.8rem 0.4rem;
+}
+
+.text .description h4 {
+  font-family: var(--ff-title-md);
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 120%;
+  color: var(--bg-gray-600);
+
+  margin-bottom: 0.8rem;
+}
+
+.text .description p {
+  font-family: var(--ff-text-sm);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: var(--bg-gray-500);
+}
+
+.grid .tags  button{
+  font-family: var(--ff-tag-sm);
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 120%;
+  color: var(--bg-gray-200);
+
+  padding: 0.2rem 0.8rem;
+  border: none;
+  border-radius: 99.9rem;
+
+  pointer-events: none;
+
+  transition: none;
+}
+
+.grid .tags button:hover {
+  transform: none;
+}
+
+.projectcard-link:hover {
+  /* transform: scale(1.05); */
+  outline: 1.5px solid var(--bg-gray-400);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+
+  width: 100%;
+  background-image: url(image/Background_Intro.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  padding: 12.8rem 12rem 20rem;
+}
+
+.contact header {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem
+}
+
+.contact header p {
+  font-family: var(--ff-subtitle);
+  font-size: 2rem;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--bg-purple);
+}
+
+.contact header h2 {
+  font-family: var(--ff-title-md);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 120%;
+  color: var(--bg-gray-600);
+}
+
+.contact header a {
+  font-family: var(--ff-text-md);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  color: var(--bg-gray-500);
+}
+
+.contact .links a {
+  text-decoration: none;
+}
+
+.contact .links button {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  width: 40rem;
+  padding: 2rem 4rem;
+
+  background: var(--bg-gray-300);
+  border: none;
+  border-radius: 0.8rem;
+
+
+  font-family: var(--ff-text-md);
+  font-size: 1.6rem;
+  line-height: 140%;
+  font-weight: 500;
+  color: var(--bg-gray-500);
+}
