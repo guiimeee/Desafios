@@ -8,7 +8,7 @@
   font-size: 62.5%;
   --fs-body: 1.6rem;
 
-  --ff-title-lg: "Asap", serif; 
+  --ff-title-lg: bold 56px/120% 'Asap', sans-serif; 
   --ff-title-md: "Asap", serif; 
   --ff-title-lg: "Asap", serif;
   
@@ -111,10 +111,7 @@ body {
 
 .text .title h1 {
   color: var(--bg-gray-600);
-  font-family: var(--ff-title-lg);
-  font-size: 5.6rem;
-  line-height: 120%;
-  font-weight: bold;
+  font: var(--ff-title-lg);
 }
 
 .text p {
@@ -332,16 +329,23 @@ body {
   color: var(--bg-gray-500);
 }
 
+.contact .links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
 .contact .links a {
   text-decoration: none;
 }
 
 .contact .links button {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 1.2rem;
   width: 40rem;
-  padding: 2rem 4rem;
+  padding: 2rem;
 
   background: var(--bg-gray-300);
   border: none;
@@ -353,4 +357,22 @@ body {
   line-height: 140%;
   font-weight: 500;
   color: var(--bg-gray-500);
+}
+
+.icon-left {
+  display: flex;
+}
+
+.links .text {
+  width: 28.8rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact .links button:hover {
+  outline: 1.5px solid var(--bg-blue);
+}
+
+.contact .links button:hover .icon-left img {
+  filter: invert(53%) sepia(90%) saturate(1155%) hue-rotate(180deg) brightness(88%) contrast(95%);
 }
